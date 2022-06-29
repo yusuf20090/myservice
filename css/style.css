@@ -17,12 +17,27 @@ img {
 div {
     width: 300px;
     border: 1px solid green;
-    box-shadow: 0px 0px 20px green;
+    box-shadow: 0px 0px 20px green ;
     border-radius: 10px;
     padding: 16px;
     text-align: center;
     display: inline-block;
     margin: 10px;
+  animation: shadow 6s infinite;  
+}
+@keyframes shadow{
+    0%{
+        box-shadow:0px 0px 20px green;
+        border-color: green;
+    }
+    50%{
+        box-shadow: 0px 0px 20px orange ;
+        border-color: orange;
+    }
+    100%{
+        box-shadow:0px 0px 20px green;
+        border-color: green;
+    }
 }
 
 hr {
